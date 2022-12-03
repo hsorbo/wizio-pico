@@ -32,10 +32,17 @@
 ![pico](https://raw.githubusercontent.com/Wiz-IO/LIB/master/pico/a1.jpg)
 
 ## Install Platform
+
+### Vscode
+
 _Note: be sure [**git**](https://git-scm.com/downloads) is installed_
 * PIO Home > Platforms > Advanced Installation 
 * paste https://github.com/Wiz-IO/wizio-pico
 * INSTALL
+
+### Command line
+
+`pio platform install https://github.com/Wiz-IO/wizio-pico`
 
 ## Uninstall ( fast ) ... Re-Install ( do this and Install again )
 * In directory C:\Users\USER_NAME\.platformio\\**platforms**
