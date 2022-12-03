@@ -8,7 +8,6 @@ from os.path import join
 from shutil import copyfile
 from colorama import Fore
 from pico import *
-from uf2conv import dev_uploader
 from SCons.Script import Builder
 
 bynary_type_info = []
@@ -195,8 +194,7 @@ def dev_compiler(env, application_name = 'APPLICATION'):
                 ]), "Building $TARGET"),
                 suffix = ".bin"
             )
-        ),
-        UPLOADCMD = dev_uploader
+        )
     )
     if False == env.wifi:
         env.Append( CPPDEFINES = [ "PICO_WIFI" ] )    

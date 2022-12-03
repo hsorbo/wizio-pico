@@ -40,6 +40,11 @@
         "type": "toolchain",
         "version": "~1.70201.0"
     },
+    "tool-rp2040tools": {
+      "type": "uploader",
+      "owner": "platformio",
+      "version": "~1.0.2"
+    },
     "tool-wizio-pico": {
         "type": "uploader",
         "version": "https://github.com/Wiz-IO/tool-wizio-pico.git"
@@ -48,7 +53,7 @@
       "optional": true,
       "type": "debugger",
       "version": "https://github.com/Wiz-IO/tool-pico-openocd"
-    } 
+    }
 
   }
 }
