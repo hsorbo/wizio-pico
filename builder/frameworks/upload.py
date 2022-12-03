@@ -31,7 +31,7 @@ def upload(env, prg):
         rp2040tools = platform.get_package_dir("tool-rp2040tools")
         elf2uf2 = join(rp2040tools or "", "elf2uf2")
         upload_source="$BUILD_DIR/${PROGNAME}.uf2"
-        env.Execute(elf2uf2 + " $BUILD_DIR/${PROGNAME}.elf {upload_source}")
+        env.Execute(elf2uf2 + " $BUILD_DIR/${PROGNAME}.elf ${upload_source}")
         env.Replace(
             UPLOADER=join(rp2040tools or "", "rp2040load"),
             UPLOADERFLAGS=["-v", "-D"],
